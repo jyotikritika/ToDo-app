@@ -1,0 +1,141 @@
+/* .app{
+  background: linear-gradient(to bottom right, purple, blue);
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.toDoParent {
+  background: linear-gradient(to bottom right, rgb(190, 108, 190), rgb(163, 213, 241));
+  height:100vh; /*not working */
+  width:100%; /*not working */
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  font-family: calibri;
+}
+
+.card{
+  background-color: rgb(252, 247, 239);
+  height: 500px;
+  width: 380px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(172, 121, 172, 0.5);
+}
+
+.dateHeader{
+  height: 40px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(224, 220, 220);
+  margin: 1em 0;
+  padding: 0;
+}
+
+.heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+}
+
+.listItem {
+  display: flex;
+  flex-flow: row;
+  /* align-items: centre;
+  justify-content: flex-start; */
+  padding: 10px;
+  margin-left: 60px;
+}
+
+.boxItem {
+
+}
+
+.addTask {
+  border: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 13px;
+}
+
+label input {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Style the artificial checkbox */
+.chckbox {
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  border: 1.5px solid grey;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+/* Style its checked state...with a ticked icon */
+/* [type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -4px;
+  left: 2px;
+} */
+
+.tickbox::before {
+  content: '\2714';
+  position: absolute;
+  top: -4px;
+  left: 2px;
+}
+
+/* input[type=checkbox]:checked + div.strikethrough{
+  text-decoration: line-through;
+} */
+
+.strikethrough{
+  text-decoration: line-through;
+  color: gray
+}
+
+.taskContainer {
+  display: flex;
+  border-color: gray;
+  border-width: 2px;
+}
+
+.deleteBtn {
+  font-size: 10px;
+  background-color: rgb(240, 58, 34);
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  border-width: 1px; 
+  border-color: rgb(240, 152, 152);
+  box-shadow: 1.5px 1.5px 2px rgba(201, 103, 119, 0.781);
+}
+
+.deleteBtn::before {
+  content: 'x';
+  color: white;
+  /* position: absolute; */
+  top: -4px;
+  left: 5px;
+}
+
+.hideDeleteBtn {
+  display: none;
+}
