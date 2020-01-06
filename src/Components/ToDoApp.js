@@ -4,7 +4,12 @@ import Card from "./Card";
 class ToDoApp extends React.Component{
 
   state={
+    date: "",
+    cardsArray: [],
+  }
 
+  componentDidMount() {
+    
   }
 
   render(){

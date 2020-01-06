@@ -28,7 +28,9 @@ body {
 }
 
 .dateHeader{
-  height: 40px;
+  height: 20px;
+  text-align: center; 
+  padding: 10px;
 }
 
 hr {
@@ -49,6 +51,8 @@ hr {
 .content {
   display: flex;
   flex-flow: column;
+  height: 350px;
+  overflow-y: auto;
 }
 
 .listItem {
@@ -118,12 +122,12 @@ label input {
 }
 
 .deleteBtn {
-  font-size: 10px;
+  font-size: 0.5rem;
   background-color: rgb(240, 58, 34);
-  height: 15px;
-  width: 15px;
-  border-radius: 10px;
-  border-width: 1px; 
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  /* border-width: 0.1rem;  */
   border-color: rgb(240, 152, 152);
   box-shadow: 1.5px 1.5px 2px rgba(201, 103, 119, 0.781);
 }
@@ -132,8 +136,8 @@ label input {
   content: 'x';
   color: white;
   /* position: absolute; */
-  top: -4px;
-  left: 5px;
+  top: -1rem;
+  left: 5rem;
 }
 
 .hideDeleteBtn {
